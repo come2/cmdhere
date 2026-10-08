@@ -1,52 +1,90 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen"> -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <title>CMD Here</title>
-  </head>
-
-  <body>
-    <header>
-      <div class="inner">
-        <h1>CMD Here</h1>
-        <h2>Connect · Manage · Deliver</h2>
-      </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          
-<h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome</h3>
-<p>This is a nonprofit website and for personal testing only.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact</h3>
-<p>Welcome to drop me the email if any - "alvin at cmdhere dot com". </p>
-
-<h3>
-<a id="host-and-review" class="anchor" href="#host-and-review" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thanks</h3>
-<p>Code reviewed by ChatGPT.</p>
- 
-        </section>
-
-        <aside id="sidebar">
-          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3c1d1dd8-924b-4271-8861-ee555360336f" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-
-        </aside>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CMDHere — Alvin Chen's professional website. Enterprise IT, digital transformation, and technology experience across clinical research, pharmaceutical manufacturing, and distribution.">
+  <meta name="theme-color" content="#103d70">
+  <title>CMDHere | Enterprise IT & Digital Transformation</title>
+  <style>
+    :root{color-scheme:light;--navy:#103d70;--blue:#1765ad;--ink:#182b42;--muted:#5b6c7d;--line:#e1e9f1;--pale:#f3f7fb}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+    a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}a:focus-visible{outline:3px solid #65b4ef;outline-offset:3px}
+    .wrap{width:min(1080px,calc(100% - 44px));margin:auto}
+    .hero{color:#fff;background:linear-gradient(125deg,#0b315d 0%,#14518c 65%,#1a71b7 100%);position:relative;overflow:hidden}
+    .hero:after{content:"";position:absolute;right:-130px;top:-190px;width:540px;height:540px;border:1px solid #ffffff2c;border-radius:50%;box-shadow:0 0 0 95px #ffffff08,0 0 0 190px #ffffff06;pointer-events:none}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:20px;position:relative;z-index:1}
+    .brand{font-size:1.25rem;font-weight:750;letter-spacing:-.035em;color:#fff}
+    .nav-links{display:flex;gap:24px;flex-wrap:wrap}.nav-links a{color:#e3f0fb;font-size:.9rem}
+    .hero-content{padding:75px 0 94px;position:relative;z-index:1;max-width:900px}
+    .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;font-weight:700;color:#b7d9f6;margin:0 0 13px}
+    h1{font-size:clamp(3rem,8vw,5.2rem);letter-spacing:-.06em;line-height:1.08;margin:0 0 23px}
+    .domains{font-size:clamp(1rem,2.3vw,1.4rem);font-weight:600;letter-spacing:.015em;margin:0 0 13px}
+    .tagline{font-size:clamp(1rem,2vw,1.2rem);color:#d7e9f8;margin:0}
+    main{padding:68px 0 74px}.section{margin-bottom:65px;scroll-margin-top:24px}
+    .section:last-child{margin-bottom:0}
+    .section-title{font-size:1.65rem;line-height:1.25;letter-spacing:-.035em;margin:0 0 18px;color:var(--navy)}
+    .intro{max-width:780px;font-size:1.08rem;color:#40556a;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .tile{border:1px solid var(--line);border-radius:14px;padding:23px 24px;background:#fff}
+    .tile h3{font-size:1.05rem;margin:0 0 8px;color:#173e6a}
+    .tile p{margin:0;color:var(--muted);font-size:.96rem}
+    .life{background:var(--pale);border:1px solid var(--line);border-radius:16px;padding:26px 28px}
+    .life-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .life h3{font-size:1.05rem;margin:0 0 6px;color:var(--navy)}.life p{font-size:.94rem;color:var(--muted);margin:0}
+    .contact{display:flex;gap:12px;flex-wrap:wrap}.contact a,.contact .email-text{display:inline-flex;align-items:center;justify-content:center;border:1px solid #cbdbe9;border-radius:9px;padding:11px 18px;font-weight:600}
+    .contact .email-text{background:var(--navy);border-color:var(--navy);color:#fff}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:#6d7e8e;font-size:.86rem}
+    .footer-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media(max-width:650px){.wrap{width:min(100% - 34px,1080px)}.nav{align-items:flex-start}.nav-links{gap:13px}.hero-content{padding:65px 0 75px}.grid,.life-row{grid-template-columns:1fr}.life{padding:22px}.section{margin-bottom:50px}main{padding:52px 0}.contact a,.contact .email-text{width:100%}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="wrap">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#top">CMDHere</a>
+        <div class="nav-links"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#contact">Contact</a></div>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Technology · Integration · Transformation</p>
+        <h1>CMDHere</h1>
+        <p class="domains">Clinical · Manufacturing · Distribution</p>
+        <p class="tagline">Enterprise IT &amp; Digital Transformation</p>
       </div>
     </div>
-  </body>
+  </header>
+  <main class="wrap">
+    <section class="section" id="about" aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title">About</h2>
+      <p class="intro">CMDHere is the personal professional website of Alvin Chen, sharing perspectives on enterprise IT leadership, technology integration, digital transformation, and emerging AI applications. My experience spans regulated life sciences environments and enterprise technology operations.</p>
+    </section>
+    <section class="section" id="expertise" aria-labelledby="expertise-title">
+      <h2 class="section-title" id="expertise-title">Areas of Expertise</h2>
+      <div class="grid">
+        <article class="tile"><h3>IT Leadership &amp; Management</h3><p>Enterprise IT strategy, operations, infrastructure, and cross-functional collaboration.</p></article>
+        <article class="tile"><h3>SAP &amp; Supply Chain Integration</h3><p>Enterprise systems, ERP integration, and technology-enabled supply chain processes.</p></article>
+        <article class="tile"><h3>AI &amp; Digital Transformation</h3><p>Practical applications of AI, automation, analytics, and business process improvement.</p></article>
+        <article class="tile"><h3>Cybersecurity &amp; GxP Compliance</h3><p>Information security, data privacy, IT governance, and regulated industry requirements.</p></article>
+      </div>
+    </section>
+    <section class="section" id="life-sciences" aria-labelledby="life-title">
+      <h2 class="section-title" id="life-title">Life Sciences Experience</h2>
+      <div class="life"><div class="life-row">
+        <div><h3>Clinical</h3><p>Technology and information systems supporting clinical research environments.</p></div>
+        <div><h3>Manufacturing</h3><p>Enterprise applications and compliance in pharmaceutical manufacturing.</p></div>
+        <div><h3>Distribution</h3><p>IT and systems integration across pharmaceutical logistics and supply chains.</p></div>
+      </div></div>
+    </section>
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <h2 class="section-title" id="contact-title">Connect</h2>
+      <p class="intro" style="margin-bottom:20px">Feel free to connect for professional conversations, technology exchange, and new opportunities.</p>
+      <div class="contact"><span class="email-text">alvin@cmdhere.com</span><a href="https://www.linkedin.com/in/alvinit" target="_blank" rel="noopener noreferrer">LinkedIn Profile ↗</a></div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-row"><span>© 2026 CMDHere · Alvin Chen</span><span>Personal Professional Website</span></div></footer>
+</body>
 </html>
